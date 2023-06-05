@@ -3,38 +3,119 @@
 <link href="DataTables/datatables.min.css" rel="stylesheet"/>
 <script src="DataTables/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="DataTables/datatables.min.js"></script>
-
+<!--<script type="text/javascript" src="DataTables/xlsx.core.min.js"></script>-->
 
 
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
     <!--第二步：添加如下 HTML 代码-->
-<table id="table_id_example" class="display">
-    <thead>
-        <tr>
-            <th>Column 1</th>
-            <th>Column 2</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Row 1 Data 1</td>
-            <td>Row 1 Data 2</td>
-        </tr>
-        <tr>
-            <td>Row 2 Data 1</td>
-            <td>Row 2 Data 2</td>
-        </tr>
-    </tbody>
-</table>
-    <script type="text/javascript">
-        $(document).ready( function () {
-    $('#table_id_example').DataTable();
-} );
-    </script>
+    <style>
+      body {
+        background-image: url('background.jpg');
+        background-size: cover;
+      }
+
+      .container {
+        max-width: 75%;
+        margin: 0 auto;
+        text-align: center;
+        padding-top: 50px;
+      }
+
+      h1 {
+        font-size: 3em;
+        color: white;
+        text-shadow: 2px 2px 2px black;
+      }
+
+      table {
+        width: 100%;
+      }
+    </style>
+
 </head>
 <body>
+    <table id="output">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1 Data 1</td>
+                <td>Row 1 Data 2</td>
+            </tr>
+            <tr>
+                <td>Row 2 Data 1</td>
+                <td>Row 2 Data 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <input type="file" id="input">
+<!--    <table id="output"></table>-->
 
+    <script>
+    path = "Data/data.xlsx"
+      // 获取 input 标签和 output 标签
+
+      const input = document.getElementById('input');
+      const output = document.getElementById('output');
+
+      // 当用户选择文件时执行
+      input.addEventListener('change', function() {
+        // 读取文件
+        const reader = new FileReader();
+        reader.readAsText(input.files[0]);
+
+        // 当文件读取完成时执行
+        reader.onload = function() {
+          // 解析 CSV 文件
+          const csv = reader.result;
+          const lines = csv.split('\n');
+          const headers = lines[0].split(',');
+          const data = lines.slice(1).map(line => line.split(','));
+
+
+          output.innerHTML = `
+            <thead>
+              <tr>
+                ${headers.map(header => `<th>${header}</th>`).join('')}
+              </tr>
+            </thead>
+            <tbody>
+              ${data.map(row => `
+                <tr>
+                  ${row.map(cell => `<td>${cell}</td>`).join('')}
+                </tr>
+              `).join('')}
+            </tbody>
+          `;
+          console.log(output.innerHTML);
+        input.style['visibility'] = 'hidden';
+        $('#output').DataTable( {
+        'bSort': false,
+        scrollY: 400,
+        dom: 'Pfrtip'
+        })
+        };
+        // $(document).ready( function () {
+        //
+        // } );
+
+      });
+    </script>
+
+
+
+    <script type="text/javascript">
+        //data = ImportData()
+
+
+
+
+    </script>
 </body>
 </html>
