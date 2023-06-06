@@ -1,138 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="672a6387-18d4-4d4f-8f39-e0325e60f155" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pyproj/css/dt.jqueryui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pyproj/css/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/data.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Data/data.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.bootstrap4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.bootstrap4.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.bootstrap5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.bootstrap5.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.bulma.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.bulma.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.dataTables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.dataTables.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.foundation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.foundation.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.jqueryui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.jqueryui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.semanticui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/buttons.semanticui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/common.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/css/mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.bootstrap4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.bootstrap4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.bootstrap5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.bootstrap5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.bulma.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.bulma.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.colVis.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.colVis.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.dataTables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.foundation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.html5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.html5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.jqueryui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.jqueryui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.print.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.print.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.semanticui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/buttons.semanticui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/dataTables.buttons.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/Buttons-2.3.6/js/dataTables.buttons.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.bootstrap4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.bootstrap4.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.bootstrap5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.bootstrap5.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.bulma.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.bulma.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.dataTables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.dataTables.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.foundation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.foundation.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.jqueryui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.jqueryui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.semanticui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/dataTables.semanticui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/jquery.dataTables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/css/jquery.dataTables.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/images/sort_asc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/images/sort_asc_disabled.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/images/sort_both.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/images/sort_desc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/images/sort_desc_disabled.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.bootstrap4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.bootstrap4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.bootstrap5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.bootstrap5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.bulma.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.bulma.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.dataTables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.foundation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.jqueryui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.jqueryui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.semanticui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/dataTables.semanticui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/jquery.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/DataTables-1.13.4/js/jquery.dataTables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.bootstrap4.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.bootstrap4.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.bootstrap5.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.bootstrap5.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.bulma.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.bulma.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.dataTables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.dataTables.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.foundation.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.foundation.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.jqueryui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.jqueryui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.semanticui.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/css/searchBuilder.semanticui.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/dataTables.searchBuilder.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/dataTables.searchBuilder.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.bootstrap4.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.bootstrap4.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.bootstrap5.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.bootstrap5.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.bulma.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.bulma.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.dataTables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.dataTables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.foundation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.foundation.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.jqueryui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.jqueryui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.semanticui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/SearchBuilder-1.4.2/js/searchBuilder.semanticui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/datatables.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/datatables.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/datatables.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/datatables.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/jQuery-3.6.0/jquery-3.6.0.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/jQuery-3.6.0/jquery-3.6.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/DataTables/xlsx.core.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
-    </list>
+    <list default="true" id="672a6387-18d4-4d4f-8f39-e0325e60f155" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -166,12 +35,6 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/duaho/Projects/BigJIU.github.io&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\duaho\Projects\BigJIU.github.io\pyproj\css" />
-      <recent name="C:\Users\duaho\Projects\BigJIU.github.io\pyproj" />
-    </key>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -182,8 +45,7 @@
       <updated>1685952032146</updated>
       <workItem from="1685952034676" duration="5806000" />
       <workItem from="1685963393057" duration="4016000" />
-      <workItem from="1686040626366" duration="829000" />
-      <workItem from="1686063233599" duration="3676000" />
+      <workItem from="1686040626366" duration="596000" />
     </task>
     <servers />
   </component>
