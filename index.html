@@ -47,6 +47,46 @@
         box-sizing: border-box;
       }
 
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* 设置弹出框内容样式 */
+      .modal-content {
+        background-color: white;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      /* 设置输入框样式 */
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      /* 设置提交按钮样式 */
+      .submit-btn {
+        background-color: blue;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+
+
     </style>
 
 </head>
@@ -78,6 +118,22 @@
             <table id="output" class="display" style="white-space: nowrap;"  width="75%" >    </table>
     </div>
 
+    <script>
+        function getInput(){
+            const form = document.getElementById('modal-content');
+            const inputs = form.querySelectorAll("input");
+            const values = [];
+            var table = $('#output').DataTable();
+            inputs.forEach(function(input) {
+                values.push(input.value);
+            });
+            table.row.add( values ).draw();
+            pop.style['visibility'] = 'hidden'
+        }
+    </script>
+    <div class="modal" id = "pop" style="visibility: hidden">
+
+    </div>
 
 
 
@@ -134,7 +190,7 @@
 
 
 
-            $(document).ready(function() {
+        $(document).ready(function() {
         // Setup - add a text input to each footer cell
         $('#output tfoot th').each( function () {
             var title = $('#example thead th').eq( $(this).index() ).text();
@@ -177,26 +233,17 @@
             table.row('.selected').remove().draw( false );
         } );
 
-        var counter = 1;
-
+        pop = document.getElementById("pop");
         $('#addRow').click( function () {
+            pop.style['visibility'] = 'visible';
 
-            table.row.add( [
-                counter +'.1',
-                counter +'.2',
-                counter +'.3',
-                counter +'.4',
-                counter +'.5',
-                counter +'.1',
-                counter +'.2',
-                counter +'.3',
-                counter +'.4',
-                counter +'.5'
-            ] ).draw();
-
-            counter++;
+            pop.innerHTML = `
+            <div class="modal-content" id = "modal-content">
+                ${headers.map(header => `<label>${header}</label><input type='text' placeholder="请输入内容">`).join('')}
+            </div>
+            <button id="add" class="submit-btn" onclick="getInput()">提交</button>;
+          `;
         } );
-
 
 
     } );
