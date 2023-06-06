@@ -71,7 +71,10 @@
 <!--    </table>-->
     <h1 align="center">相关数据查询数据库</h1>
     <input type="file" id="input" align="center">
+
     <div class="container">
+        <button id="delRow"> 删除记录 </button>
+        <button id="addRow"> 添加记录 </button>
             <table id="output" class="display" style="white-space: nowrap;"  width="75%" >    </table>
     </div>
 
@@ -158,6 +161,44 @@
                     .draw();
             } );
         } );
+
+
+        $('#output tbody').on( 'click', 'tr', function () {
+            if ( $(this).hasClass('selected') ) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        } );
+
+        $('#delRow').click( function () {
+            table.row('.selected').remove().draw( false );
+        } );
+
+        var counter = 1;
+
+        $('#addRow').click( function () {
+
+            table.row.add( [
+                counter +'.1',
+                counter +'.2',
+                counter +'.3',
+                counter +'.4',
+                counter +'.5',
+                counter +'.1',
+                counter +'.2',
+                counter +'.3',
+                counter +'.4',
+                counter +'.5'
+            ] ).draw();
+
+            counter++;
+        } );
+
+
+
     } );
 
 
@@ -174,41 +215,11 @@
     <script type="text/javascript">
         //Delete certain row
     $(document).ready(function() {
-        var table = $('#input').DataTable();
 
-        $('#example tbody').on( 'click', 'tr', function () {
-            if ( $(this).hasClass('selected') ) {
-                $(this).removeClass('selected');
-            }
-            else {
-                table.$('tr.selected').removeClass('selected');
-                $(this).addClass('selected');
-            }
-        } );
-
-        $('#delRow').click( function () {
-            table.row('.selected').remove().draw( false );
-        } );
     } );
         //Add certain row
     $(document).ready(function() {
-        var t = $('#input').DataTable();
-        var counter = 1;
- 
-        $('#addRow').on( 'click', function () {
-            t.row.add( [
-                counter +'.1',
-                counter +'.2',
-                counter +'.3',
-                counter +'.4',
-                counter +'.5'
-            ] ).draw();
 
-            counter++;
-        } );
-
-        // Automatically add a first row of data
-        $('#addRow').click();
     } );
     //local search box
 
