@@ -174,7 +174,7 @@
     <script type="text/javascript">
         //Delete certain row
     $(document).ready(function() {
-        var table = $('#example').DataTable();
+        var table = $('#input').DataTable();
 
         $('#example tbody').on( 'click', 'tr', function () {
             if ( $(this).hasClass('selected') ) {
@@ -192,7 +192,7 @@
     } );
         //Add certain row
     $(document).ready(function() {
-        var t = $('#example').DataTable();
+        var t = $('#input').DataTable();
         var counter = 1;
  
         $('#addRow').on( 'click', function () {
