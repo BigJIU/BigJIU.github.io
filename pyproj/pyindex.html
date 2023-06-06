@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="DataTables/datatables.min.css" rel="stylesheet"/>
+<script src="DataTables/jQuery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="DataTables/datatables.min.js"></script>
+<!--<script type="text/javascript" src="DataTables/xlsx.core.min.js"></script>-->
+
+
+<head>
+    <meta charset="UTF-8">
+<!--    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">-->
+<!--    <link rel="stylesheet" type="text/css" href="css/dt.jqueryui.css">-->
+    <title>Title</title>
+
+    <style>
+      body {
+        background-image: url('background.jpg');
+        background-size: cover;
+      }
+
+      .container {
+        max-width: 75%;
+        margin: 0 auto;
+        text-align: center;
+          justify-content: center;
+          display:flex;
+          align-items: center;
+        height: 80vh;
+
+      }
+      .container:hover {
+          background: rgba(213, 216, 231, 0.75);
+          -moz-border-radius: 15px;
+          border-radius: 15px;
+      }
+
+      h1 {
+        font-size: 3em;
+        color: white;
+        margin: 0 auto;
+        text-shadow: 2px 2px 2px black;
+      }
+      
+      tfoot input {
+        width: 100%;
+        padding: 3px;
+        box-sizing: border-box;
+      }
+
+    </style>
+
+</head>
+<body>
+<!--    <table id="output1" class="display" style="white-space: nowrap; " >-->
+<!--        <thead>-->
+<!--            <tr>-->
+<!--                <th>Column 1</th>-->
+<!--                <th>Column 2</th>-->
+<!--            </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--            <tr>-->
+<!--                <td>Row 1 Data 1</td>-->
+<!--                <td>Row 1 Data 2</td>-->
+<!--            </tr>-->
+<!--            <tr>-->
+<!--                <td>Row 2 Data 1</td>-->
+<!--                <td>Row 2 Data 2</td>-->
+<!--            </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+    <h1 align="center">相关数据查询数据库</h1>
+    <input type="file" id="input" align="center">
+    <div class="container">
+            <table id="output" class="display" style="white-space: nowrap;"  width="75%" >    </table>
+    </div>
+
+
+
+
+<!--    <table id="output"></table>-->
+
+    <script>
+
+    path = "Data/data.xlsx"
+      // 获取 input 标签和 output 标签
+
+      const input = document.getElementById('input');
+      const output = document.getElementById('output');
+
+      // 当用户选择文件时执行
+      input.addEventListener('change', function() {
+        // 读取文件
+        const reader = new FileReader();
+        reader.readAsText(input.files[0]);
+
+        // 当文件读取完成时执行
+        reader.onload = function() {
+          // 解析 CSV 文件
+          const csv = reader.result;
+          const lines = csv.split('\n');
+          const headers = lines[0].split(',');
+          const data = lines.slice(1).map(line => line.split(','));
+
+
+          output.innerHTML = `
+            <thead>
+              <tr>
+                ${headers.map(header => `<th>${header}</th>`).join('')}
+              </tr>
+            </thead>
+
+            <tfoot>
+              <tr>
+                ${headers.map(header => `<th>${header}</th>`).join('')}
+              </tr>
+            </tfoot>
+
+            <tbody>
+              ${data.map(row => `
+                <tr>
+                  ${row.map(cell => `<td>${cell}</td>`).join('')}
+                </tr>
+              `).join('')}
+            </tbody>
+          `;
+          //console.log(output.innerHTML);
+        input.style['visibility'] = 'hidden';
+
+
+
+
+
+            $(document).ready(function() {
+        // Setup - add a text input to each footer cell
+        $('#output tfoot th').each( function () {
+            var title = $('#example thead th').eq( $(this).index() ).text();
+            $(this).html( '<input type="text" placeholder="Search '+title+'" />' );
+        } );
+
+        // DataTable
+        var table = $('#output').DataTable( {
+        'bSort': false,
+        scrollY: 400,
+         "scrollCollapse": true,
+            "scrollX":true,
+            "autoWidth": false,
+         "jQueryUI": true,
+        dom: 'Pfrtip'
+        })
+
+        // Apply the search
+        table.columns().eq( 0 ).each( function ( colIdx ) {
+            $( 'input', table.column( colIdx ).footer() ).on( 'keyup change', function () {
+                table
+                    .column( colIdx )
+                    .search( this.value )
+                    .draw();
+            } );
+        } );
+    } );
+
+
+        };
+        // $(document).ready( function () {
+        //
+        // } );
+
+      });
+    </script>
+
+
+
+    <script type="text/javascript">
+        //Delete certain row
+    $(document).ready(function() {
+        var table = $('#example').DataTable();
+
+        $('#example tbody').on( 'click', 'tr', function () {
+            if ( $(this).hasClass('selected') ) {
+                $(this).removeClass('selected');
+            }
+            else {
+                table.$('tr.selected').removeClass('selected');
+                $(this).addClass('selected');
+            }
+        } );
+
+        $('#delRow').click( function () {
+            table.row('.selected').remove().draw( false );
+        } );
+    } );
+        //Add certain row
+    $(document).ready(function() {
+        var t = $('#example').DataTable();
+        var counter = 1;
+ 
+        $('#addRow').on( 'click', function () {
+            t.row.add( [
+                counter +'.1',
+                counter +'.2',
+                counter +'.3',
+                counter +'.4',
+                counter +'.5'
+            ] ).draw();
+
+            counter++;
+        } );
+
+        // Automatically add a first row of data
+        $('#addRow').click();
+    } );
+    //local search box
+
+
+
+    </script>
+</body>
+</html>
