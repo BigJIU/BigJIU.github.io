@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="672a6387-18d4-4d4f-8f39-e0325e60f155" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/dt.jqueryui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/dt.jqueryui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/jquery-ui.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,10 +38,18 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/duaho/Projects/TCMrecords",
+    "last_opened_file_path": "C:/Users/duaho/Projects/BigJIU.github.io/static/css",
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\duaho\Projects\BigJIU.github.io\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\duaho\Projects\BigJIU.github.io\static" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,6 +66,8 @@
       <workItem from="1688733946413" duration="610000" />
       <workItem from="1689181654850" duration="8000" />
       <workItem from="1689737729148" duration="1335000" />
+      <workItem from="1694071022579" duration="930000" />
+      <workItem from="1694072640885" duration="1113000" />
     </task>
     <servers />
   </component>
